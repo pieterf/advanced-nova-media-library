@@ -13,6 +13,7 @@
   import tap from 'lodash/tap'
   import get from 'lodash/get'
   import set from 'lodash/set'
+  import clone from 'lodash/clone'
 
   export default {
     props: {
@@ -32,7 +33,7 @@
 
     data() {
       return {
-        image: JSON.parse(JSON.stringify(this.modelValue)),
+        image: clone(this.modelValue),
       }
     },
 

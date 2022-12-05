@@ -40,10 +40,6 @@
         <help-text class="error-text mt-2 text-danger" v-if="showErrors && hasError">
           {{ firstError }}
         </help-text>
-
-        <help-text class="help-text mt-2" v-if="showHelpText">
-          {{ field.helpText }}
-        </help-text>
       </div>
     </template>
   </component>

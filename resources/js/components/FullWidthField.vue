@@ -12,10 +12,6 @@
             {{ __('*') }}
           </span>
         </form-label>
-
-        <help-text :show-help-text="showHelpText">
-          {{ field.helpText }}
-        </help-text>
       </div>
 
       <slot name="field" />
